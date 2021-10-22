@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+		document.write('<h2>js练习题二</h2>')
+		document.write('<h4>第一小题</h4>')
+			let a=(Number)(123);
+			let b=(Number)(321);
+			if(a>b){
+				document.write('a大于b');
+			}
+			if(a<b){
+				document.write('a小于b');
+			}
+			if(a===b){
+				document.write('等于b');
+			}
+			document.write('<hr>')
+		document.write('<h4>第二小题</h4>')
+			let a1=(Number)(120);
+			let s=a1/5;
+			if(a1%5===0){
+				document.write(`a可以被五整除,结果为：${s}`)
+			}else{
+				document.write('不可以被五整除')
+			}
+			document.write('<hr>')
+		document.write('<h4>第三小题</h4>')
+			for(let i=1;i<100;i++)
+				if(i%2===0){
+					document.write(i+' ');
+				}
+			document.write('<hr>')
+		document.write('<h4>第四题</h4>');
+		    let str = '100以内能被7整除的数：';
+		    let i = 0;
+				while(i++ < 100){
+					if(i % 7 === 0){
+						str += i + ' ';
+					}
+				}
+				document.write(str);
+			document.write('<hr>')
+		document.write('<h4>第五小题</h4>')
+			let a2=(Number)(9);
+			let b2=(Number)(7);
+			let c2=(Number)(5);
+			if(a2>b2>c2 || a2>c2>b2){
+				document.write(a2);
+			}else if(b2>a2>c2 || b2>c2>a2){
+				document.write(b2);
+			}else{
+				document.write(c2);
+			}
+		document.write('<hr>')
+//===============================================================
+		document.write('<h2>js练习题三</h2>')
+		document.write('<h4>第一小题</h4>')
+			document.write('一百以内偶数：');
+			for(let j=0;j<=100;j++)
+				if(j%2===0){
+					document.write(j+' ');
+				}
+			document.write('<br>')
+			document.write('一百以内奇数：');
+			for(let x=0;x<=100;x++)
+				if(x%2!==0){
+					document.write(x+' ');
+				}
+			document.write('<hr>')
+		document.write('<h4>第二小题</h4>')
+			function test(a){
+			            let str = '',
+			                sum = 0;
+			            if(!a){
+			                alert(a + "请至少传入一个值！");
+			            } else {
+			                for(let i = arguments.length - 1; i >= 0; i--){
+			                    sum += arguments[i];
+			                    str += arguments[i] + ((i === 0) ? (' = ' + sum) : ' + ');
+			                }
+			            }
+			            return str;
+			        }
+			        document.write(test(1,2,3,4,5,6,7,8,9) + '<br>');
+			        document.write(test(3,6,9,1,4,7) + '<br>');
+					document.write(test(1) + '<br>');
+			document.write('<hr>')
+//===============================================================
+		document.write('<h2>第三题</h2>')
+			document.write('<input>')
+			document.write('<br>')
+			document.write('<input>')
+		</script>
+	</body>
+</html>
